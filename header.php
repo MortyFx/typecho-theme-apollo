@@ -33,11 +33,10 @@
 <header>
     <a href="/" class="logo-link"><img src="<?php $this->options->themeUrl('img/logo.png'); ?>"></a>
             <ul class="nav nav-list">
-                <li class="nav-list-item"><a href="/" target="_self" class="nav-list-link active">BLOG</a></li>
-                <li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li>
-                <li class="nav-list-item"><a href="http://weibo.com/sunchongsheng" target="_blank" class="nav-list-link">ABOUT</a></li>
-                <li class="nav-list-item"><a href="https://github.com/pinggod" target="_blank" class="nav-list-link">GUESTBOOK</a></li>
-                <li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">GITHUB</a></li>
+                <li class="nav-list-item"><a href="#" target="_self" class="nav-list-link <?php if($this->is('index')) echo 'active'; ?>">BLOG</a></li>
+                <li class="nav-list-item"><a href="#" target="_self" class="nav-list-link">ARCHIVES</a></li>
+                <li class="nav-list-item"><a href="#" target="_self" class="nav-list-link">ABOUT</a></li>
+                <li class="nav-list-item"><a href="#" target="_self" class="nav-list-link">GUESTBOOK</a></li>
             </ul>
 </header>
 <section class="container">

@@ -3,6 +3,8 @@
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%
 }
+
+
 body {
 	margin:0
 }
@@ -179,10 +181,14 @@ hr {
 }
 code {
 	margin:0 2px;
-	padding:3px 5px;
-	color:#e96900;
+	padding:3px 5px; 
+	color:#e96900; 
 	border-radius:2px;
-	white-space:inherit
+	white-space:inherit 
+}
+pre code {
+	padding:0px;
+	color:#34495e; 
 }
 iframe,video {
 	max-width:100%;
@@ -244,6 +250,11 @@ header .nav-list-item a {
 .home.post-list .post-content>ul {
 	list-style:initial
 }
+
+.home.post-list .post-content {
+	 margin-bottom: 10px; 
+}
+
 .home.post-list .read-more {
 	color:#42b983
 }
@@ -379,134 +390,7 @@ code,pre {
 	background-color:#f8f8f8;
 	font-family:'Roboto Mono',Monaco,courier,monospace
 }
-.highlight {
-	position:relative;
-	margin:1em 0;
-	border-radius:2px;
-	line-height:1.1em;
-	background-color:#f8f8f8;
-	overflow-x:auto
-}
-.highlight table,.highlight tr,.highlight td {
-	width:100%;
-	border-collapse:collapse;
-	padding:0;
-	margin:0
-}
-.highlight .gutter {
-	display:none
-}
-.highlight .code pre {
-	padding:1.2em 1.4em;
-	line-height:1.5em;
-	margin:0
-}
-.highlight .code pre .line {
-	width:auto;
-	height:18px
-}
-.highlight.html .code:after,.highlight.js .code:after,.highlight.bash .code:after,.highlight.css .code:after,.highlight.scss .code:after,.highlight.diff .code:after,.highlight.java .code:after,.highlight.xml .code:after,.highlight.python .code:after,.highlight.json .code:after,.highlight.swift .code:after,.highlight.ruby .code:after,.highlight.perl .code:after,.highlight.php .code:after,.highlight.c .code:after,.highlight.cpp .code:after,.highlight.ts .code:after {
-	position:absolute;
-	top:0;
-	right:0;
-	color:#ccc;
-	text-align:right;
-	font-size:0.75em;
-	padding:5px 10px 0;
-	line-height:15px;
-	height:15px;
-	font-weight:600
-}
-.highlight.html .code:after {
-	content:"HTML"
-}
-.highlight.js .code:after {
-	content:"JS"
-}
-.highlight.bash .code:after {
-	content:"BASH"
-}
-.highlight.css .code:after {
-	content:"CSS"
-}
-.highlight.scss .code:after {
-	content:"SCSS"
-}
-.highlight.diff .code:after {
-	content:"DIFF"
-}
-.highlight.java .code:after {
-	content:"JAVA"
-}
-.highlight.xml .code:after {
-	content:"XML"
-}
-.highlight.python .code:after {
-	content:"PYTHON"
-}
-.highlight.json .code:after {
-	content:"JSON"
-}
-.highlight.swift .code:after {
-	content:"SWIFT"
-}
-.highlight.ruby .code:after {
-	content:"RUBY"
-}
-.highlight.perl .code:after {
-	content:"PERL"
-}
-.highlight.php .code:after {
-	content:"PHP"
-}
-.highlight.c .code:after {
-	content:"C"
-}
-.highlight.java .code:after {
-	content:"JAVA"
-}
-.highlight.cpp .code:after {
-	content:"CPP"
-}
-.highlight.ts .code:after {
-	content:"TS"
-}
-.highlight.cpp .code:after {
-	content:'C++'
-}
-pre {
-	color:#525252
-}
-pre .function .keyword,pre .constant {
-	color:#0092db
-}
-pre .keyword,pre .attribute {
-	color:#e96900
-}
-pre .number,pre .literal {
-	color:#ae81ff
-}
-pre .tag,pre .tag .title,pre .change,pre .winutils,pre .flow,pre .lisp .title,pre .clojure .built_in,pre .nginx .title,pre .tex .special {
-	color:#2973b7
-}
-pre .symbol,pre .symbol .string,pre .value,pre .regexp {
-	color:#42b983
-}
-pre .title {
-	color:#83B917
-}
-pre .tag .value,pre .string,pre .subst,pre .haskell .type,pre .preprocessor,pre .ruby .class .parent,pre .built_in,pre .sql .aggregate,pre .django .template_tag,pre .django .variable,pre .smalltalk .class,pre .javadoc,pre .django .filter .argument,pre .smalltalk .localvars,pre .smalltalk .array,pre .attr_selector,pre .pseudo,pre .addition,pre .stream,pre .envvar,pre .apache .tag,pre .apache .cbracket,pre .tex .command,pre .prompt {
-	color:#42b983
-}
-pre .comment,pre .java .annotation,pre .python .decorator,pre .template_comment,pre .pi,pre .doctype,pre .shebang,pre .apache .sqbracket,pre .tex .formula {
-	color:#b3b3b3
-}
-pre .deletion {
-	color:#BA4545
-}
-pre .coffeescript .javascript,pre .javascript .xml,pre .tex .formula,pre .xml .javascript,pre .xml .vbscript,pre .xml .css,pre .xml .cdata {
-	opacity:0.5
-}
+
 .paginator {
 	margin:4em 0;
 	text-align:center
@@ -594,3 +478,356 @@ footer .copyright a:hover {
 	color: grey;
 	font-size: 14px;
 }
+
+#instantclick-bar {
+    background: #4fc08d;
+}
+
+
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+php+python */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    background: none;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #f8f8f8;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
+}
+
+.token.punctuation {
+    color: #999;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #a67f59;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
+
+.token.function {
+    color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #e90;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+#comments {
+	margin-top: 50px;
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+}
+
+#comments .page-navigator {
+    float: inherit;
+    margin: 1rem 0 0;
+    text-align: center
+}
+
+.page-navigator li {
+    float: none;
+    display: inline-block;
+    margin: .4rem
+}
+
+.page-navigator a {
+    display: block;
+    padding: .4rem .6rem
+}
+
+.page-navigator .current {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    background-color: #fff
+}
+
+.page-navigator .current:hover {
+    border: 1px solid #2479cc
+}
+
+#comments a {
+    color: #aaa;
+}
+
+#comments a:hover {
+    color: #42b983;
+    text-decoration: none
+}
+
+.comment-list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none
+}
+
+.comment-at {
+    padding: 0 0 10px 0
+}
+
+.comment-close {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+    padding: 30px;
+    border: 1px dashed #eee;
+    border-radius: 5px;
+    color: #999
+}
+
+.avatar {
+    float: left;
+    display: block;
+    margin: 1.4rem 1rem 0 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd
+}
+
+.response {
+    font-size: .9rem
+}
+
+.comment-num,
+.response {
+    color: #999;
+    font-weight: 400
+}
+
+.comment-num {
+    font-size: 15px;
+}
+
+.comment-main {
+    overflow: hidden;
+    padding: 1rem 0;
+    border-bottom: 1px dotted #e0e0e0
+}
+
+.comment-main p {
+	font-size: 14px;
+    margin: 0
+}
+
+.cancel-comment-reply,
+.comment-meta {
+    margin-top: 1rem;
+    color: #aaa;
+    font-size: .8rem
+}
+
+.comment-meta .comment-reply,
+.comment-reply {
+    float: right
+}
+
+
+.comment-main:hover .comment-reply {
+    display: block
+}
+
+.cancel-reply {
+    margin-left: 10px
+}
+
+.comment-author {
+    padding: .1rem .25rem;
+    border-radius: .25rem;
+    background: #eee;
+    font-size: .7rem
+}
+
+.comment-reply a:before,
+.comment-time:before {
+    margin: 0 .5rem
+}
+
+
+.comment-parent>.comment-children {
+    margin-left: 1rem;
+    padding-left: 40px;
+    border-left: 1px dotted #e0e0e0
+}
+
+
+
+.form-control {
+	box-sizing: border-box;
+    margin: 6px 0; 
+    padding: 6px 9pt;
+    width: 33%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff
+}
+
+.form-control,
+output {
+    /* display: block;  */
+    color: #555;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.form-control:focus {
+    outline: 0;
+    border-color: #42b983;
+}
+
+
+textarea.form-control {
+	width: 100%;
+    height: 10rem;
+    resize: none
+}
+
+.submit {
+	font-size: 13px;
+    display: block;
+    /* margin: 0 auto; */
+    padding: 0 25px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #999;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s
+}
+
+.submit:active,
+.submit:active:focus,
+.submit:focus,
+.submit:hover {
+    outline-style: none;
+    border-color: #42b983;
+    color: #42b983
+}
+
+
+
+
+
+/* response */
+@media screen and (max-width:1024px) {
+	.form-control {
+		width: 100%;
+	}
+}
+
