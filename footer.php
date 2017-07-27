@@ -4,13 +4,24 @@
     <footer>
         <!-- <div class="paginator"><a href="/page/2/" class="next">NEXT</a></div> -->
         <div class="copyright">
-            <p>&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
-    <?php _e('The theme is <a href="https://muguang.me/" target="_blank">apollo</a>, Powered by <a href="http://www.typecho.org">Typecho</a>'); ?>.</p>
+            <p>&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.</p>
+            <p><?php _e('The theme is <a href="https://muguang.me/" target="_blank">apollo</a>, Powered by <a href="http://www.typecho.org">Typecho</a>'); ?>.</p>
         </div>
     </footer>
     </div>
-    <script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
      <?php $this->footer(); ?> 
+     <script src="//cdn.staticfile.org/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
+     <script src="<?php $this->options->themeUrl('js/prism.js'); ?>" data-no-instant></script>
+    <script data-no-instant>
+	InstantClick.on('change', function(isInitialLoad) {
+		if (isInitialLoad === false) {
+			if (typeof Prism !== 'undefined') Prism.highlightAll(true,null);
+			if (typeof ga !== 'undefined') ga('send', 'pageview', location.pathname + location.search);
+		}
+	});
+	InstantClick.init();
+</script>
+
 </body>
 
 </html>

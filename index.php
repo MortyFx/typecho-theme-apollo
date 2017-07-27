@@ -3,7 +3,7 @@
  * apollo 是一款极简风格的 Hexo 移植主题
  * 
  * @package apollo
- * @author Patrick95
+ * @author pinggod & Patrick95
  * @version 1.0
  * @link https://muguang.me/
  */
@@ -20,8 +20,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                         <h2 class="post-title"><a href="<?php $this->permalink() ?>" class="post-title-link"><?php $this->title() ?></a></h2>
                         <div class="post-info"><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('F j, Y'); ?></time></div>
                         <div class="post-content">
-                            <?php $this->excerpt(200);?>
-                        </div><a href="<?php $this->permalink() ?>" class="read-more">Readmore »</a></article>
+                            <?php print_summary($this, 255);?>
+                        </div><a href="<?php $this->permalink() ?>" class="read-more">Read more »</a></article>
 				</li>
 				
 	<?php endwhile; ?>
