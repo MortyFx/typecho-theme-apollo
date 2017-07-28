@@ -121,5 +121,3 @@ function print_excerpt($obj, $length)
         echo Typecho_Common::subStr(strip_tags($str), 0, $length, '...');
     }
 }
-
-}
