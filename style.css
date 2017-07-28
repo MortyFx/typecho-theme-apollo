@@ -193,6 +193,11 @@ pre code {
 	padding:0px;
 	color:#34495e; 
 }
+pre {
+	padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+}
 iframe,video {
 	max-width:100%;
 	margin:1rem auto;
