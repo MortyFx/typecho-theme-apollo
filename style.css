@@ -196,7 +196,9 @@ pre code {
 pre {
 	padding: 1em;
     margin: .5em 0;
-    overflow: auto;
+	overflow: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 iframe,video {
 	max-width:100%;
@@ -513,6 +515,9 @@ pre[class*="language-"] {
     word-wrap: normal;
     line-height: 1.5;
 
+	overflow: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
@@ -631,6 +636,9 @@ pre[class*="language-"] {
 .token.entity {
     cursor: help;
 }
+
+
+
 
 #comments {
 	margin-top: 2em;
