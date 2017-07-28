@@ -651,7 +651,7 @@ code[class*="language-"]:after {
   padding: 5px 10px 0;
   line-height: 15px;
   height: 15px;
-  font-weight: 600;
+  font-weight: normal;
 }
 .language-php:after {
   content: 'PHP';
