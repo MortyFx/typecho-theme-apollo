@@ -866,7 +866,21 @@ textarea.form-control {
     color: #42b983
 }
 
+.links{
+width:100%;/*减去padding值以后的侧栏宽度，如果你的主题侧栏padding值为0，此值即为侧栏宽度*/display:block;overflow:auto;/*这句可以兼容IE6，如果你想kill IE6，那就不要加这句*/
+}
 
+.links li{
+    content: "\e6cb";
+    float:left;width:140px;/*每列宽度*/display:block;
+}
+
+.links li:before {
+    padding-right: 3px;
+    color: #46ce4b;
+    vertical-align: bottom;
+    font-size: 17px;
+}
 
 
 
