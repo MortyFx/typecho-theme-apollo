@@ -653,16 +653,16 @@ code[class*="language-"]:after {
   height: 15px;
   font-weight: normal;
 }
-.language-php:after {
+code[class="language-php"]:after {
   content: 'PHP';
 }
-.language-js:after {
+code[class="language-js"]:after {
   content: 'Javascript';
 }
-.language-python:after {
+code[class="language-python"]:after {
   content: 'Python';
 }
-.language-css:after {
+code[class="language-CSS"]:after {
   content: 'CSS';
 }
 
