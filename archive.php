@@ -22,7 +22,7 @@
                               itemprop="datePublished"><?php $this->date('F j, Y'); ?></time>
                     </div>
                     <div class="post-content">
-                        <?php print_summary($this, 255); ?>
+                        <?php print_excerpt($this, 255); ?>
                     </div>
                     <a href="<?php $this->permalink() ?>" class="read-more">Read more »</a></article>
             </li>
