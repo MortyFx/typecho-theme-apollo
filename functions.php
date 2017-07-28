@@ -3,16 +3,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form)
 {
-    $slogan = new Typecho_Widget_Helper_Form_Element_Text('slogan', NULL, NULL, _t('logo下边的标语'), _t('在这里输入标语'));
-    $form->addInput($slogan);
-
     //图片设置
     $favicon = new Typecho_Widget_Helper_Form_Element_Text('favicon', NULL, NULL, _t('Favicon'), _t('在这里输入 Favicon 链接,带http:// ,不填则使用主题自带的图片'));
     $form->addInput($favicon);
     $touxiang = new Typecho_Widget_Helper_Form_Element_Text('touxiang', NULL, NULL, _t('头像'), _t('在这里输入头像链接,带http:// ,不填则使用主题自带的图片'));
     $form->addInput($touxiang);
-    $iosicon = new Typecho_Widget_Helper_Form_Element_Text('iosicon', NULL, NULL, _t('左侧背景图'), _t('在这里输入背景图链接,带http:// ,不填则使用主题自带的图片'));
-    $form->addInput($iosicon);
 
     //Pjax加速
     $search_form = new Typecho_Widget_Helper_Form_Element_Checkbox('search_form',
