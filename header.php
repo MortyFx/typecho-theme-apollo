@@ -38,7 +38,7 @@
             <li class="nav-list-item"><a href="<?php $this->options->siteUrl(); ?>"
                                          class="nav-list-link <?php if ($this->is('index')) echo 'active'; ?>">BLOG</a>
             </li>
-            <li class="nav-list-item"><a href="<?php $this->options->siteUrl('index.php/archives.html'); ?>"
+            <li class="nav-list-item"><a href="<?php $this->options->siteUrl('archives.html'); ?>"
                                          class="nav-list-link <?php if ($this->is('page', 'archives')) echo 'active'; ?>">ARCHIVES</a>
             </li>
             <li class="nav-list-item"><a href="<?php $this->options->siteUrl('about.html'); ?>"
