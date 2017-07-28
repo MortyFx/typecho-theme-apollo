@@ -641,7 +641,7 @@ pre {
 	position: relative;
 }
 
-.language-php:after {
+code[class*="language-"]:after {
   position: absolute;
   top: 0;
   right: 0;
