@@ -77,11 +77,11 @@
         <?php if ($this->allow('comment')): ?>
         <div id="<?php $this->respondId(); ?>" class="respond">
             <div class="cancel-comment-reply"><span
-                    class="response"><?php _e('To fill this form if you wanna discuss'); ?></span><span
+                    class="response"><?php _e('To fill this form if you wanna discuss.'); ?></span><span
                     class="cancel-reply"><?php $comments->cancelReply('Cancel reply'); ?></span></div>
             <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
                 <?php if ($this->user->hasLogin()): ?>
-                    <p style="padding-top:10px;"><?php _e('Already login as: '); ?><a
+                    <p style="padding-top:10px;"><?php _e('You already login as: '); ?><a
                             href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a
                             href="<?php $this->options->logoutUrl(); ?>"
                             title="Logout"><?php _e('Logout'); ?> &raquo;</a></p>
