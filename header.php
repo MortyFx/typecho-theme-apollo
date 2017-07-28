@@ -31,12 +31,12 @@
 <![endif]-->
 <div class="wrap">
 <header>
-    <a href="/" class="logo-link"><img src="<?php $this->options->themeUrl('img/logo.png'); ?>"></a>
+    <a href="<?php $this->options->siteUrl(); ?>" class="logo-link"><img src="<?php $this->options->themeUrl('img/logo.png'); ?>"></a>
             <ul class="nav nav-list">
-                <li class="nav-list-item"><a href="#" target="_self" class="nav-list-link <?php if($this->is('index')) echo 'active'; ?>">BLOG</a></li>
-                <li class="nav-list-item"><a href="#" target="_self" class="nav-list-link">ARCHIVES</a></li>
-                <li class="nav-list-item"><a href="#" target="_self" class="nav-list-link">ABOUT</a></li>
-                <li class="nav-list-item"><a href="#" target="_self" class="nav-list-link">GUESTBOOK</a></li>
+                <li class="nav-list-item"><a href="<?php $this->options->siteUrl(); ?>" class="nav-list-link <?php if($this->is('index')) echo 'active'; ?>">BLOG</a></li>
+                <li class="nav-list-item"><a href="<?php $this->options->siteUrl('index.php/archives.html'); ?>" class="nav-list-link <?php if($this->is('page', 'archives')) echo 'active'; ?>">ARCHIVES</a></li>
+                <li class="nav-list-item"><a href="<?php $this->options->siteUrl('about.html'); ?>" class="nav-list-link <?php if($this->is('page', 'about')) echo 'active'; ?>">ABOUT</a></li>
+                <li class="nav-list-item"><a href="<?php $this->options->siteUrl('guestbook.html'); ?>" class="nav-list-link <?php if($this->is('page', 'guestbook')) echo 'active'; ?>">GUESTBOOK</a></li>
             </ul>
 </header>
 <section class="container">

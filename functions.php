@@ -117,3 +117,31 @@ function print_summary($obj, $length){
     $str = preg_replace('/<script>.*?<\/script>/is', '', $obj->excerpt);
     echo Typecho_Common::subStr(strip_tags($str), 0, $length, '...');
 }
+
+function theNext($obj, $format = '%s', $default = NULL, $custom = array()) {
+    $content = $obj->db->fetchRow($obj->select()->where('table.contents.created > ? AND table.contents.created < ?',
+            $obj->created, $obj->options->gmtTime)
+            ->where('table.contents.status = ?', 'publish')
+            ->where('table.contents.type = ?', $obj->type)
+            ->where('table.contents.password IS NULL')
+            ->order('table.contents.created', Typecho_Db::SORT_ASC)
+            ->limit(1));
+
+        if ($content) {
+            $content = $obj->filter($content);
+            $default = array(
+                'title' => NULL,
+                'tagClass' => NULL
+            );
+            $custom = array_merge($default, $custom);
+            extract($custom);
+
+            $linkText = empty($title) ? $content['title'] : $title;
+            $linkClass = empty($tagClass) ? '' : 'class="' . $tagClass . '" ';
+            $link = '<a ' . $linkClass . 'href="' . $content['permalink'] . '" title="' . $content['title'] . '">' . $linkText . '</a>';
+
+            printf($format, $link);
+        } else {
+            echo $default;
+        }
+}

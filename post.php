@@ -10,6 +10,7 @@
             <?php $this->content(); ?>
         </div>
     </article>
+    <div class="paginator"><?php $this->thePrev('%s', '', ['title'=>'PREV ARTICLE', 'tagClass'=>'prev']); ?> <?php $this->theNext('%s', '', ['title'=>'NEXT ARTICLE', 'tagClass'=>'next']); ?></div>
     <?php $this->need('comments.php'); ?>
 </div>
 
