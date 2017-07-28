@@ -637,6 +637,35 @@ pre[class*="language-"] {
     cursor: help;
 }
 
+pre {
+	position: relative;
+}
+
+.language-php:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ccc;
+  text-align: right;
+  font-size: 0.75em;
+  padding: 5px 10px 0;
+  line-height: 15px;
+  height: 15px;
+  font-weight: 600;
+}
+.language-php:after {
+  content: 'PHP';
+}
+.language-js:after {
+  content: 'Javascript';
+}
+.language-python:after {
+  content: 'Python';
+}
+.language-css:after {
+  content: 'CSS';
+}
+
 
 
 
