@@ -4,38 +4,38 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form)
 {
     //图片设置
-    $favicon = new Typecho_Widget_Helper_Form_Element_Text('favicon', NULL, NULL, _t('Favicon'), _t('在这里输入 Favicon 链接,带http:// ,不填则使用主题自带的图片'));
-    $form->addInput($favicon);
-    $touxiang = new Typecho_Widget_Helper_Form_Element_Text('touxiang', NULL, NULL, _t('头像'), _t('在这里输入头像链接,带http:// ,不填则使用主题自带的图片'));
-    $form->addInput($touxiang);
+    // $favicon = new Typecho_Widget_Helper_Form_Element_Text('favicon', NULL, NULL, _t('Favicon'), _t('在这里输入 Favicon 链接,带http:// ,不填则使用主题自带的图片'));
+    // $form->addInput($favicon);
+    // $touxiang = new Typecho_Widget_Helper_Form_Element_Text('touxiang', NULL, NULL, _t('头像'), _t('在这里输入头像链接,带http:// ,不填则使用主题自带的图片'));
+    // $form->addInput($touxiang);
 
-    //Pjax加速
-    $search_form = new Typecho_Widget_Helper_Form_Element_Checkbox('search_form',
-        array('Pjax' => _t('启用Pjax加速站点,勾上即可，为使原生评论生效需要到设置-评论，去掉开启垃圾评论过滤'),), array('ShowSearch'), _t('设置开启Pjax'));
-    $form->addInput($search_form->multiMode());
+    // //Pjax加速
+    // $search_form = new Typecho_Widget_Helper_Form_Element_Checkbox('search_form',
+    //     array('Pjax' => _t('启用Pjax加速站点,勾上即可，为使原生评论生效需要到设置-评论，去掉开启垃圾评论过滤'),), array('ShowSearch'), _t('设置开启Pjax'));
+    // $form->addInput($search_form->multiMode());
 
-    //社交链接
-    $socialweibo = new Typecho_Widget_Helper_Form_Element_Text('socialweibo', NULL, NULL, _t('输入微博链接'), _t('在这里输入微博链接,带http://'));
-    $form->addInput($socialweibo);
-    $socialgithub = new Typecho_Widget_Helper_Form_Element_Text('socialgithub', NULL, NULL, _t('输入GitHub链接'), _t('在这里输入GitHub链接,带http://'));
-    $form->addInput($socialgithub);
-    $socialtwitter = new Typecho_Widget_Helper_Form_Element_Text('socialtwitter', NULL, NULL, _t('输入Twitter链接'), _t('在这里输入twitter链接,带http://'));
-    $form->addInput($socialtwitter);
-    $socialgoogle = new Typecho_Widget_Helper_Form_Element_Text('socialgoogle', NULL, NULL, _t('输入Google +链接'), _t('在这里输入Google +链接,带http://'));
-    $form->addInput($socialgoogle);
-    $socialwechat = new Typecho_Widget_Helper_Form_Element_Text('socialwechat', NULL, NULL, _t('输入微信二维码链接'), _t('在这里输入微信二维码链接,带http://'));
-    $form->addInput($socialwechat);
-    $socialqq = new Typecho_Widget_Helper_Form_Element_Text('socialqq', NULL, NULL, _t('输入QQ号码'), _t('在这里输入QQ号码'));
-    $form->addInput($socialqq);
-    $socialmusic = new Typecho_Widget_Helper_Form_Element_Text('socialmusic', NULL, NULL, _t('输入音乐链接'), _t('在这里输入音乐链接,带http://'));
-    $form->addInput($socialmusic);
+    // //社交链接
+    // $socialweibo = new Typecho_Widget_Helper_Form_Element_Text('socialweibo', NULL, NULL, _t('输入微博链接'), _t('在这里输入微博链接,带http://'));
+    // $form->addInput($socialweibo);
+    // $socialgithub = new Typecho_Widget_Helper_Form_Element_Text('socialgithub', NULL, NULL, _t('输入GitHub链接'), _t('在这里输入GitHub链接,带http://'));
+    // $form->addInput($socialgithub);
+    // $socialtwitter = new Typecho_Widget_Helper_Form_Element_Text('socialtwitter', NULL, NULL, _t('输入Twitter链接'), _t('在这里输入twitter链接,带http://'));
+    // $form->addInput($socialtwitter);
+    // $socialgoogle = new Typecho_Widget_Helper_Form_Element_Text('socialgoogle', NULL, NULL, _t('输入Google +链接'), _t('在这里输入Google +链接,带http://'));
+    // $form->addInput($socialgoogle);
+    // $socialwechat = new Typecho_Widget_Helper_Form_Element_Text('socialwechat', NULL, NULL, _t('输入微信二维码链接'), _t('在这里输入微信二维码链接,带http://'));
+    // $form->addInput($socialwechat);
+    // $socialqq = new Typecho_Widget_Helper_Form_Element_Text('socialqq', NULL, NULL, _t('输入QQ号码'), _t('在这里输入QQ号码'));
+    // $form->addInput($socialqq);
+    // $socialmusic = new Typecho_Widget_Helper_Form_Element_Text('socialmusic', NULL, NULL, _t('输入音乐链接'), _t('在这里输入音乐链接,带http://'));
+    // $form->addInput($socialmusic);
 
-    //附件源地址
-    $src_address = new Typecho_Widget_Helper_Form_Element_Text('src_add', NULL, NULL, _t('替换前地址'), _t('即你的附件存放链接，如http://www.yourblog.com/usr/uploads/'));
-    $form->addInput($src_address);
-    //替换后地址
-    $cdn_address = new Typecho_Widget_Helper_Form_Element_Text('cdn_add', NULL, NULL, _t('替换后'), _t('即你的七牛云存储域名，如http://yourblog.qiniudn.com/'));
-    $form->addInput($cdn_address);
+    // //附件源地址
+    // $src_address = new Typecho_Widget_Helper_Form_Element_Text('src_add', NULL, NULL, _t('替换前地址'), _t('即你的附件存放链接，如http://www.yourblog.com/usr/uploads/'));
+    // $form->addInput($src_address);
+    // //替换后地址
+    // $cdn_address = new Typecho_Widget_Helper_Form_Element_Text('cdn_add', NULL, NULL, _t('替换后'), _t('即你的七牛云存储域名，如http://yourblog.qiniudn.com/'));
+    // $form->addInput($cdn_address);
 
 }
 
@@ -122,31 +122,4 @@ function print_excerpt($obj, $length)
     }
 }
 
-function theNext($obj, $format = '%s', $default = NULL, $custom = array())
-{
-    $content = $obj->db->fetchRow($obj->select()->where('table.contents.created > ? AND table.contents.created < ?',
-        $obj->created, $obj->options->gmtTime)
-        ->where('table.contents.status = ?', 'publish')
-        ->where('table.contents.type = ?', $obj->type)
-        ->where('table.contents.password IS NULL')
-        ->order('table.contents.created', Typecho_Db::SORT_ASC)
-        ->limit(1));
-
-    if ($content) {
-        $content = $obj->filter($content);
-        $default = array(
-            'title' => NULL,
-            'tagClass' => NULL
-        );
-        $custom = array_merge($default, $custom);
-        extract($custom);
-
-        $linkText = empty($title) ? $content['title'] : $title;
-        $linkClass = empty($tagClass) ? '' : 'class="' . $tagClass . '" ';
-        $link = '<a ' . $linkClass . 'href="' . $content['permalink'] . '" title="' . $content['title'] . '">' . $linkText . '</a>';
-
-        printf($format, $link);
-    } else {
-        echo $default;
-    }
 }
