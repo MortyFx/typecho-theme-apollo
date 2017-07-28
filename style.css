@@ -11,6 +11,9 @@ body {
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
 	display:block
 }
+.post article {
+	margin-bottom: 4em;
+}
 audio,canvas,progress,video {
 	display:inline-block;
 	vertical-align:baseline
@@ -392,8 +395,9 @@ code,pre {
 }
 
 .paginator {
-	margin:4em 0;
-	text-align:center
+	margin:1em 0;
+	margin-top:1em;
+	text-align:center;
 }
 .paginator .prev,.paginator .next {
 	display:inline-block;
@@ -624,7 +628,7 @@ pre[class*="language-"] {
 }
 
 #comments {
-	margin-top: 50px;
+	margin-top: 2em;
 	border-top: 1px solid #ddd;
 	padding-top: 15px;
 }
@@ -776,7 +780,7 @@ pre[class*="language-"] {
 
 .form-control,
 output {
-    /* display: block;  */
+	/* display: block;  */
     color: #555;
     font-size: 13px;
     line-height: 20px;

@@ -5,7 +5,6 @@
 <div class="post">
     <article class="post-block">
         <h1 class="post-title"><?php $this->title() ?></h1>
-        <div class="post-info"><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('F j, Y'); ?></time></div>
         <div class="post-content">
             <?php $this->content(); ?>
         </div>
