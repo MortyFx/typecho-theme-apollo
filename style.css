@@ -431,7 +431,7 @@ section.container {
 	margin:0 auto
 }
 header {
-	padding:20px 100px
+	padding:20px 0px
 }
 }@media screen and (max-width:700px) {
 	.wrap {
@@ -655,6 +655,9 @@ code[class*="language-"]:after {
 }
 code.language-php:after {
   content: 'PHP';
+}
+code.language-javascript:after {
+  content: 'Javascript';
 }
 code.language-js:after {
   content: 'Javascript';
