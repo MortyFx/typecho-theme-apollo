@@ -1,9 +1,21 @@
 # Typecho-theme-apollo
 
-一款极简的移植自 Hexo 的 Typecho 主题。
+apollo 是一款移植自 [Hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) 的 Typecho 极简主义主题。
 
-原始 Hexo-apollo 主题项目地址：[hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo)
+获得更多关于本主题的信息，请 [点此进入主题发布页](https://muguang.me/php/typecho-theme-apollo.html)
 
-_Tips：还在继续移植中…_
+### 更新历史
+
+- v1.0.0 （2017-08-01）
+    - 支持 InstantClick 预加载
+    - 支持 Pangu.js 中英文自动分词
+    - 支持 Prism.js 代码高亮
+    - 支持 Typecho 原生评论
+
+### 主题截图
 
 ![screenshot](https://github.com/FaithPatrick/typecho-theme-apollo/blob/master/screenshot.png)
+
+### LICENSE
+
+MIT
