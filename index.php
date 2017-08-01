@@ -1,6 +1,6 @@
 <?php
 /**
- * apollo 是一款极简主义风格的 Hexo 移植主题
+ * apollo 是一款移植自 Hexo 的 Typecho 极简主义主题
  *
  * @package apollo
  * @author pinggod & Patrick95
