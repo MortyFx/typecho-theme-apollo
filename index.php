@@ -6,6 +6,7 @@
  * @author pinggod & Patrick95
  * @version 1.0.0
  * @link https://muguang.me/
+ * MIT © pinggod
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
