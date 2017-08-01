@@ -12,7 +12,8 @@
             'tag' => _t('标签 %s 下的文章'),
             'author' => _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
-
+    <link rel="shortcut icon" href="<?php if ($this->options->favicon): $this->options->favicon();
+    else: $this->options->themeUrl('img/favicon.ico');endif; ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 
     <!--[if lt IE 9]>
@@ -24,7 +25,6 @@
 </head>
 
 <body>
-           <!-- <script>var APlayers = [];var APlayerOptions = [];</script>    -->
 <!--[if lt IE 8]>
 <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a
     href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.
@@ -33,7 +33,8 @@
 <div class="wrap">
     <header>
         <a href="<?php $this->options->siteUrl(); ?>" class="logo-link"><img
-                src="<?php $this->options->themeUrl('img/logo.png'); ?>"></a>
+                src="<?php if ($this->options->logo): $this->options->logo();
+                else: $this->options->themeUrl('img/logo.png');endif; ?>"></a>
         <ul class="nav nav-list">
             <li class="nav-list-item"><a href="<?php $this->options->siteUrl(); ?>"
                                          class="nav-list-link <?php if ($this->is('index')) echo 'active'; ?>">BLOG</a>
@@ -44,12 +45,12 @@
             <li class="nav-list-item"><a href="<?php $this->options->siteUrl('about.html'); ?>"
                                          class="nav-list-link <?php if ($this->is('page', 'about')) echo 'active'; ?>">ABOUT</a>
             </li>
+            <li class="nav-list-item"><a href="<?php $this->options->siteUrl('links.html'); ?>"
+                                         class="nav-list-link <?php if ($this->is('page', 'links')) echo 'active'; ?>">LINKS</a>
+            </li>
             <li class="nav-list-item"><a href="<?php $this->options->siteUrl('guestbook.html'); ?>"
                                          class="nav-list-link <?php if ($this->is('page', 'guestbook')) echo 'active'; ?>">GUESTBOOK</a>
             </li>
         </ul>
     </header>
     <section class="container">
-        <!-- <script>
-            var APlayers = [];var APlayerOptions = [];
-        </script> -->

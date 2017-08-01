@@ -107,7 +107,7 @@
                     <?php endif; ?>
 
                     <textarea name="text" id="textarea" class="form-control"
-                              onkeydown="if(event.ctrlKey&&event.keyCode==13){document.getElementById('misubmit').click();return false};"
+                              onkeydown="if((event.ctrlKey||event.metaKey)&&event.keyCode==13){document.getElementById('misubmit').click();return false};"
                               placeholder="<?php _e('Type your comment here...'); ?>"
                               required><?php $this->remember('text', false); ?></textarea>
                     <button type="submit" class="submit" id="misubmit"><?php _e('Submit'); ?></button>
@@ -189,7 +189,7 @@
             };
         })();
     </script>
-    <?php if (!empty($this->options->search_form) && in_array('Pjax', $this->options->search_form)): ?>
+    <?php if (!empty($this->options->pjax) && in_array('InstantClick', $this->options->pjax)): ?>
         <script type="text/javascript" data-no-instant>
             (function () {
                 var event = document.addEventListener ? {
