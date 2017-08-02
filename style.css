@@ -240,6 +240,7 @@ code {
 }
 
 pre code {
+	margin: 0;
     padding: 0px;
     color: #34495e;
 }
@@ -404,11 +405,24 @@ header .nav-list-item a {
 .post-content h2:before, .post-content h3:before, .post-content h4:before, .post-content h5:before, .post-content h6:before {
     content: "#";
     color: #42b983;
-    position: absolute;
+    /* position: absolute; */
     left: -0.7em;
     top: -4px;
     font-size: 1.2em;
     font-weight: bold
+}
+
+.post .post-content h3:before {
+    content:"[";
+    margin-right:5px;
+    color:#42b983;
+    font-size:20px
+}
+.post .post-content h3:after {
+    content:"]";
+    margin-left:5px;
+    color:#42b983;
+    font-size:20px
 }
 
 .post-content h4:before, .post-content h5:before, .post-content h6:before {
@@ -531,7 +545,7 @@ section.container {
     }
 
     header {
-        padding: 20px 0px
+        padding: 20px 50px
     }
 }
 
