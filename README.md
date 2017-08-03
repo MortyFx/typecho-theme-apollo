@@ -6,6 +6,9 @@ apollo 是一款移植自 [Hexo-theme-apollo](https://github.com/pinggod/hexo-th
 
 ### 更新历史
 
+- v1.0.1 （2017-08-01）
+    - 样式微调
+
 - v1.0.0 （2017-08-01）
     - 支持 InstantClick 预加载
     - 支持 Pangu.js 中英文自动分词
