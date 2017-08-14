@@ -16,6 +16,7 @@ $this->need('header.php'); ?>
                 $mon = 0;
                 $i = 0;
                 $j = 0;
+                $output = '';
                 while ($archives->next()):
                     $year_tmp = date('Y', $archives->created);
                     $mon_tmp = date('m', $archives->created);
@@ -32,8 +33,8 @@ $this->need('header.php'); ?>
                         $output .= '<ul>';
                     }
                     $output .= '<li><a href="' . $archives->permalink . '">' . $archives->title . '</a>&nbsp;&nbsp;&nbsp;&nbsp;(' . date('M j, Y', $archives->created) . ')</li>';
+                    $output .= '</ul>';
                 endwhile;
-                $output .= '</ul>';
                 echo $output;
                 ?>
             </div>
