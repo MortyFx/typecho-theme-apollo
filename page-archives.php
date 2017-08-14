@@ -16,13 +16,13 @@ $this->need('header.php'); ?>
                 $mon = 0;
                 $i = 0;
                 $j = 0;
+                $output = '';
                 while ($archives->next()):
                     $year_tmp = date('Y', $archives->created);
                     $mon_tmp = date('m', $archives->created);
                     $y = $year;
                     $m = $mon;
-                    if ($mon != $mon_tmp && $mon > 0) $output .= '</ul>';
-                    if ($year != $year_tmp && $year > 0) $output .= '</ul>';
+                    if (($mon != $mon_tmp && $mon > 0) || ($year != $year_tmp && $year > 0)) $output .= '</ul>';
                     if ($year != $year_tmp) {
                         $year = $year_tmp;
                     }
@@ -33,7 +33,7 @@ $this->need('header.php'); ?>
                     }
                     $output .= '<li><a href="' . $archives->permalink . '">' . $archives->title . '</a>&nbsp;&nbsp;&nbsp;&nbsp;(' . date('M j, Y', $archives->created) . ')</li>';
                 endwhile;
-                $output .= '</ul>';
+                if ($output) $output .= '</ul>';
                 echo $output;
                 ?>
             </div>
