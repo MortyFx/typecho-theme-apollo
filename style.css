@@ -578,7 +578,6 @@ section.container {
 
     .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
         max-width: 300px;
-        left: 15px
     }
 
     .ds-thread, #disqus_thread {
@@ -1010,6 +1009,7 @@ textarea.form-control {
     width: 140px; /*每列宽度*/
     display: block;
 }
+
 
 /* response */
 @media screen and (max-width: 1024px) {
