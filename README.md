@@ -20,7 +20,7 @@ apollo 是一款移植自 [Hexo-theme-apollo](https://github.com/pinggod/hexo-th
 
 ### 主题截图
 
-![screenshot](https://github.com/MortyFx/typecho-theme-apollo/blob/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/MortyFx/typecho-theme-apollo/refs/heads/main/screenshot.png)
 
 ### LICENSE
 
